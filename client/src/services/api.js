@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: import.meta.env.VITE_API_URL || '/api'
+    baseURL: import.meta.env.VITE_API_URL || 'https://task-management-system-production-6619.up.railway.app/api'
 });
 
 // Request interceptor to add token
