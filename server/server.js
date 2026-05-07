@@ -26,6 +26,10 @@ app.use('/api/tasks', tasks);
 
 const PORT = process.env.PORT || 5000;
 
+app.get("/", (req, res) => {
+  res.send("Backend Running Successfully 🚀");
+});
+
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI)
 .then(() => {
